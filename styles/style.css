@@ -1,5 +1,111 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+body {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+h2 {
+    color: white;
+    background-color: red;
+}
+
+
+header {
+    text-transform: uppercase;
+}
+
+header img {
+    width: 2em;
+    height: 2em;
+}
+
+nav {
+    display: flex;
+}
+
+h2 {
+    padding: 10px;
+}
+
+h3 {
+    color: dimgrey;
+    font-weight: normal;
+}
+
+main img {
+    height: 370px;
+    width: 370px;
+    object-fit: cover;
+}
+
+main img:hover {
+    height: 400px;
+}
+
+main > img:first-of-type {
+    height: inherit;
+    width: inherit;
+}
+
+/* Dit is om de tekst te laten zien wanneer je over een afbeelding hovert */
+.img_wrap {
+    position: relative;
+}
+
+.img_description {
+    position: absolute;
+    top: 220px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    visibility: hidden;
+}
+
+.img_wrap:hover .img_description {
+    visibility: visible;
+}
+
+/**/
+
+article {
+    padding: 1em 0;
+}
+
+footer {
+    color: white;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+footer > nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer > nav > ul > li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+footer > nav > ul > li:hover {
+    color: black;
+}
