@@ -16,6 +16,8 @@ img {
     max-width: 100%;
 }
 
+/* NAVIGATIE V/D HEADER */
+
 header,
 h2 {
     color: white;
@@ -23,7 +25,7 @@ h2 {
 }
 
 
-header {
+nav:first-of-type {
     text-transform: uppercase;
 }
 
@@ -42,12 +44,41 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+/* Dit zinnetje werkt niet */
+    max-height: 100px;
 }
 
 li {
     text-decoration: none;
     list-style: none;
 }
+
+
+nav:nth-of-type(2) ul {
+    max-height: none;
+    background-color: green;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+}
+
+/* class om de navigatie zichbaar te maken */
+nav:nth-last-of-type(2) ul.actief {
+    left: 0px;
+}
+
+nav:nth-of-type(2) li {
+    padding: 1em;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+
+nav:nth-of-type(2) li:hover {
+    background-color: lightgrey;
+}
+
+/* REST VAN DE PAGINA */
 
 h2 {
     padding: 10px;
@@ -60,8 +91,8 @@ h3 {
 
 main img {
     height: 370px;
-    width: 370px;
     object-fit: cover;
+    transition: 0.5s ease;
 }
 
 main img:hover {
@@ -73,12 +104,29 @@ main > img:first-of-type {
     width: inherit;
 }
 
-/* Dit is om de tekst te laten zien wanneer je over een afbeelding hovert */
-.img_wrap {
-    position: relative;
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 10px;
 }
 
-.img_description {
+section > h2 {
+    grid-column: span 4;
+}
+
+article {
+    padding: 1em 0;
+}
+
+/* Dit is om de tekst te laten zien wanneer je over een afbeelding hovert */
+figure {
+    position: relative;
+    transition:
+}
+
+figcaption {
+    text-shadow: 1px 1px 2px black;
     position: absolute;
     top: 220px;
     bottom: 0;
@@ -88,15 +136,11 @@ main > img:first-of-type {
     visibility: hidden;
 }
 
-.img_wrap:hover .img_description {
+figure:hover figcaption {
     visibility: visible;
 }
 
-/**/
-
-article {
-    padding: 1em 0;
-}
+/* FOOTER */
 
 footer {
     color: white;
