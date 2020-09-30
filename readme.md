@@ -35,7 +35,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 1 (week 3)
 Docentbegeleider Lars heeft naar mijn website gekeken en gaf me de onderstaande tips:
 
-- Als je een hamburgermenu gaat maken, moet je erop letten dat deze nabvigatie niet 'hidden' is aangezien het dan niet toegankelijk is voor screenreaders.
+- Als je een hamburgermenu gaat maken, moet je erop letten dat deze navigatie niet 'hidden' is aangezien het dan niet toegankelijk is voor screenreaders.
 
 -Bij de hover op de afbeeldingen kan je een transition toevoegen zodat het er wat fijner uitziet
 
@@ -71,8 +71,8 @@ Dit heb ik aangepast sinds vorig voortgangsgesprek:
 - Schaduw toegevoegd aan figcaption zodat tekst leesbaar   is (verbetering van echte website)
 - Navigatie hamburgermenu
 
-![Screenshot navigatie](images/Screenshotweek5.Navigatie)
-![Screenshot navigatie](images/Screenshotweek5.Grid)
+![Screenshot navigatie](images/Screenshotweek5.Navigatie.png)
+![Screenshot navigatie](images/Screenshotweek5.Grid.png)
 ### Agenda voor meeting
 Agende donderdag 17 sept:
 Jan Willem van Kempen 
