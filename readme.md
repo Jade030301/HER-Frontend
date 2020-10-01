@@ -27,9 +27,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
+Docent Danny heeft tijdens deze voortgang naar mijn website gekeken. Ik kreeg complimenten voor mijn HTML en mijn CSS zag er ook prima uit. Danny heeft me geholpen om zowel mijn grid als hamburger menu werkend te maken. Voor volgend voortgangsgesprek moet ik de volgende aspecten nog aanpassen:
 
--same as voortgang 1-
-
+- 'Kinderziektes' weghalen (strakkere vormgeving) en dus nog iets beter ansluiten bij de huisstijl van Coca Cola
+- Toevoegen van een detailpagina
+- Kijken of ik voldoe aan de eisen van het beoordelingsformulier
 
 
 ## Voortgang 1 (week 3)
@@ -98,6 +100,12 @@ javascript werkt niet
 Walter van Koesveld
 Image repeat
 Lijst met kolommen die niet goed te verdelen zijn
+
+Jan Willem van Kempen
+Grid in hamburger menu werkt niet
+Hamburger menu is niet scrollbaar
+Transparant border uitgevouwen hamburgermenu
+Text wil niet centreren
 
 ### Verslag van meeting
 

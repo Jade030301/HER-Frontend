@@ -61,13 +61,12 @@ nav:nth-of-type(2) ul {
     display: flex;
     flex-direction: column;
     max-width: 75%;
-    position: absolute;
-    left:-500px;
+    transform: translateX(-50vw);
 }
 
 /* class om de navigatie zichbaar te maken */
-nav:nth-last-of-type(2) ul.actief {
-    left: 0px;
+nav:nth-of-type(2) ul.actief {
+    transform: translateX(0);
 }
 
 nav:nth-of-type(2) li {
@@ -114,7 +113,8 @@ section {
 }
 
 section > h2 {
-    grid-column: span 4;
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
 
 article {

@@ -6,5 +6,5 @@ var Menu = document.querySelector('nav:nth-of-type(2) ul');
 knop.addEventListener('click', klapopen);
 
 function klapopen() {
-    knop.classList.toggle('.actief');
+    Menu.classList.toggle('actief');
 }
