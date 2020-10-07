@@ -6,31 +6,26 @@
 }
 
 body {
-    padding: 0;
+    padding: 0px;
     margin: 0;
     font-family: sans-serif;
     text-align: center;
 }
 
+/* voorkomt dat de image buiten de vw komt */
 img {
     max-width: 100%;
 }
 
+
 /* NAVIGATIE V/D HEADER */
 
-header,
-h2 {
-    color: white;
-    background-color: red;
-}
-
-
-nav:first-of-type {
-    text-transform: uppercase;
-}
-
-header img {
+nav:first-of-type img {
     width: 2em;
+    height: 2em;
+}
+
+nav:first-of-type img:hover {
     height: 2em;
 }
 
@@ -39,13 +34,12 @@ img:nth-of-type(2) {
     height: 4em;
 }
 
+nav {
+    color: white;
+}
+
 ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-/* Dit zinnetje werkt niet */
-    max-height: 100px;
+    transition: 0.8s ease;
 }
 
 li {
@@ -53,35 +47,56 @@ li {
     list-style: none;
 }
 
+/* Inhoud hoofdmenu */
 
-nav:nth-of-type(2) ul {
-    max-height: none;
-    background-color: green;
+ul:nth-of-type(1) {
+    text-transform: uppercase;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Inhoud hamburger menu */
+
+ul:nth-of-type(2) {
+    background-color: palevioletred;
     color: black;
     display: flex;
     flex-direction: column;
-    max-width: 75%;
-    transform: translateX(-50vw);
+    max-width: 40%;
+    transform: translateX(-80vw);
+}
+
+ul:nth-of-type(2) li {
+    padding: 1.2em 30px 1em 0px;
+    font-size: 1.5em;
+}
+
+ul:nth-of-type(2) li:hover {
+    background-color: lightgrey;
 }
 
 /* class om de navigatie zichbaar te maken */
-nav:nth-of-type(2) ul.actief {
+ul:nth-of-type(2).actief {
     transform: translateX(0);
 }
 
-nav:nth-of-type(2) li {
-    padding: 1em;
-    font-size: 1.5em;
-    transition: 0.5s ease;
+/* class om de main te laten stoppen met scrollen als hamburger
+menu open is */
+
+/*
+main.vast {
+    position: fixed;
 }
 
-nav:nth-of-type(2) li:hover {
-    background-color: lightgrey;
-}
 
 /* REST VAN DE PAGINA */
 
 h2 {
+    color: white;
+    background-color: red;
     padding: 10px;
 }
 
@@ -89,22 +104,6 @@ h3 {
     color: dimgrey;
     font-weight: normal;
 }
-
-main img {
-    height: 370px;
-    object-fit: cover;
-    transition: 0.5s ease;
-}
-
-main img:hover {
-    height: 400px;
-}
-
-main > img:first-of-type {
-    height: inherit;
-    width: inherit;
-}
-
 
 section {
     display: grid;
@@ -117,21 +116,26 @@ section > h2 {
     grid-column-end: -1;
 }
 
-article {
-    padding: 1em 0;
-}
-
 /* Dit is om de tekst te laten zien wanneer je over een afbeelding hovert */
 figure {
     position: relative;
-    transition:
+}
+
+figure img {
+    object-fit: cover;
+    height: 370px;
+    transition: 0.5s ease;
+}
+
+figure img:hover {
+    height: 400px;
 }
 
 figcaption {
     text-shadow: 1px 1px 2px black;
     position: absolute;
-    top: 220px;
-    bottom: 0;
+    top: 50%;
+    bottom: 50%;
     left: 0;
     right: 0;
     color: white;
@@ -150,20 +154,44 @@ footer {
     padding: 1em;
 }
 
-footer > nav > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Varianten pagina WERKT NIET! */
+button {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: none;
+    padding: 1em 2em;
+    background-color: darkgrey;
+    transition: 0.5s ease-in-out;
 }
 
-footer > nav > ul > li {
-    text-decoration: none;
-    list-style: none;
-    font-weight: bold;
-}
-
-
-footer > nav > ul > li:hover {
+button:hover {
     color: black;
+    background-color: dimgrey;
 }
+
+p {
+    white-space: pre-line;
+    padding: 0 30px;
+}
+
+h1 {
+    color: white;
+    font-weight: normal;
+    background-image:
+        url(../images/Variantenbeginafbeelding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile */
+
+
+/* Ipad */
+
+@media screen and (min-width: 500px) {}
+
+
+/* Desktop */

@@ -75,6 +75,11 @@ Dit heb ik aangepast sinds vorig voortgangsgesprek:
 
 ![Screenshot navigatie](images/Screenshotweek5.Navigatie.png)
 ![Screenshot navigatie](images/Screenshotweek5.Grid.png)
+
+Week 6
+Begin deze week heb ik geoefend met toegankelijkheid, wat ik erg interessant vond. Verder ben ik veel gaan uitproberen met mijn eigen site. Dit ging echter helemaal mis wat veel frustraties opleverde. Het gebeurde vaak dat elementen niet (juist) aangesproken werden. Ik hoop meer duidelijkheid te krijgen over deze onderwerpen tijdens het laatste voortgangsgesprek.
+In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaast heb ik de hover van de afbeeldingen op de homepagina soepeler laten verlopen. 
+![Screenshot week 6 tweede pagina](images/Screenshotweek6.png)
 ### Agenda voor meeting
 Agende donderdag 17 sept:
 Jan Willem van Kempen 
@@ -106,6 +111,15 @@ Grid in hamburger menu werkt niet
 Hamburger menu is niet scrollbaar
 Transparant border uitgevouwen hamburgermenu
 Text wil niet centreren
+
+Agenda donderdag 8 oktober:
+Jade Dionisio Pires
+Witruimte om nav die niet weggaat
+Nav als overlay over content laten vallen (ook als main content fixed is)
+Footer neemt nav over van nav:first-of-type
+Background image toevoegen werkt niet / hoe maak je de maten groter
+Grid neemt altijd een 4e column in ook als deze niet bestaat
+Content 2e pagina niet aanspreekbaar zonder dat homepage mee veranderd
 
 ### Verslag van meeting
 
