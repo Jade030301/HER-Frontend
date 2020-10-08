@@ -22,8 +22,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Deze week was ik als enige van mijn clubje aanwezig wat betekend dat ik heel veel hulp heb kunnen krijgen van docentbegeleider las Lars. 
+Ik heb de volgende dingen aangepast: navigatie is netter, geen witruimte, valt over de rest van de pagina en het logo is groter; toevoegen van een background-image aan de header, verbeteren van het grid, specifieker maken van de hover over de afbeeldingen (zat verschil tussen de 2 sections), footer neemt niet meer de styling aan van de navigatie in de header.
 
+Dit moet ik nog gaan aanpassen voor de beoordeling: mediaqueries voor background image, vormgeving strakker maken, tweede pagina juist indelen, toegankelijkheid. 
+
+Dit kan ik eventueel nog aanpassen, als ik tijd heb:
+header background veranderen bij scroll d.m.v. javascript, driehoekjes onder de heading van de sections toevoegen. 
 
 
 ## Voortgang 2 (week 5)
