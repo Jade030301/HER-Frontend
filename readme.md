@@ -88,12 +88,14 @@ In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaas
 
 Weken tot aan beoordeling - Week 7 en 8
 De laatste weken heb ik mijn site tot in de puntjes uitgewerkt. Ik heb de afbeelding van de header op de index pagina veranderd van bron met een mediuequery zoals de orginele site dit ook heeft gedaan, waardoor de site meer responsive is geworden. 
-![Screenshot Header](images/Week7:8.HeaderAfbeelding)
+![Screenshot Header](images/Week7:8.HeaderAfbeelding,png)
 Ik heb de kinderziektes, zoals Danny dat zelf zegt, verwijderd uit de navigatie van de header en de footer waardoor alles er nu strak uitziet. 
 ![Screenshot navigatie](images/Week7:8.NetteNav.png)
 ![Screenshot footer](images/Week7:8.NetteFooter.png)
+De content van het hamburger menu is nu compleet en vormgegeven als het origineel. 
+![Screenshot Detailpagina](images/Week7:8.HamburgerContent.png)
 De detailpagina is nu responsive en vormgegeven zoals het orgineel. 
-![Screenshot Detailpagina](images/Week7:8.Detailpagina)
+![Screenshot Detailpagina](images/Week7:8.Detailpagina.png)
 
 ### Agenda voor meeting
 Agende donderdag 17 sept:
