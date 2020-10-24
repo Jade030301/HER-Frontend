@@ -11,3 +11,4 @@ function klapopen() {
     Main.classList.toggle('vast');
 }
 
+document.body.scrollTop > 50

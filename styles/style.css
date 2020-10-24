@@ -19,97 +19,132 @@ img {
 
 
 /* NAVIGATIE V/D HEADER */
-header {
-    background-image: url(../images/beginafbeeldingMobiel.jpg);
-    background-repeat: no-repeat;
-}
-
-
-nav:first-of-type img {
-    width: 2em;
-    height: 2em;
-}
-
-nav:first-of-type img:hover {
-    height: 2em;
-}
-
-/* LOGO */
-nav ul li:nth-of-type(2) img {
-    width: 4em;
-    height: 4em;
-}
-
-nav {
-    color: white;
-}
-
 ul {
-    transition: 0.8s ease;
     padding: 0;
     margin: 0;
 }
 
-li {
-    text-decoration: none;
-    list-style: none;
+/* Achtergrondafbeelding van de header*/
+header {
+    background-image: url(../images/beginafbeeldingMobiel.jpg);
+    background-repeat: no-repeat;
+    height: 95vh;
 }
 
 /* Inhoud hoofdmenu */
-
 header ul:nth-of-type(1) {
-    text-transform: uppercase;
+    color: white;
     background-color: transparent;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 10px 30px 0 0;
+}
+
+/* Hamburger knopje*/
+.HamburgerClass {
+    cursor: pointer;
+}
+
+.HamburgerClass figcaption {
+    text-transform: uppercase;
+    text-shadow: none;
+    position: absolute;
+    top: 8px;
+    left: 35px;
+    color: white;
+    visibility: visible;
+}
+
+.HamburgerClass img {
+    width: 2em;
+    height: 2em;
+}
+
+.HamburgerClass img:hover {
+    height: 2em;
+}
+
+/* LOGO */
+nav ul li:nth-of-type(2) img {
+    width: 5em;
+    height: 5em;
+}
+
+nav ul li:nth-of-type(2) img:hover {
+    height: 5em;
+}
+
+/* Vergrootglas knopje */
+
+header ul:first-of-type li:nth-of-type(3) {
+    width: 2em;
+    height: 2em;
+    padding-top: 20px;
 }
 
 /* Inhoud hamburger menu */
 
 ul:nth-of-type(2) {
-    background-color: palevioletred;
     color: black;
+    background-color: palevioletred;
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 45vw;
+    max-height: 100vh;
+    overflow: scroll;
     transform: translateX(-80vw);
+    transition: 0.8s ease;
 }
 
 ul:nth-of-type(2) li {
-    padding: 1.2em 30px 1em 0px;
     font-size: 1.5em;
+    padding: 1em;
+}
+
+ul:nth-of-type(2) li:last-of-type {
+    color: red;
 }
 
 ul:nth-of-type(2) li:hover {
     background-color: lightgrey;
 }
 
-/* class om de navigatie zichbaar te maken */
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+
+/* class om de navigatie zichbaar te maken voor java */
 ul:nth-of-type(2).actief {
     transform: translateX(0);
     position: absolute;
-    top: 50px;
-    bottom: 0;
+    top: 70px;
+    bottom: 0px;
     z-index: 99;
 }
 
-/* class om de main te laten stoppen met scrollen als hamburger
-menu open is */
-
+/* class om de main te laten stoppen met scrollen als hamburgermenu open is voor java */
 
 main.vast {
     position: fixed;
+    max-height: 100vw;
 }
 
 
-/* REST VAN DE PAGINA */
+/* MAIN */
 
-h2 {
+section h2 {
+    font-weight: normal;
     color: white;
     background-color: red;
-    padding: 10px;
+    padding: 20px;
+    font-size: 1.7em;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -174,22 +209,73 @@ figure:hover figcaption {
 /* FOOTER */
 
 footer {
+    font-weight: lighter;
     color: white;
+    font-size: 0.8em;
     background-color: lightgray;
+    padding: 2em;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer nav ul li {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+
+footer nav ul li:last-of-type {
+    border: none;
+}
+
+footer nav ul li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* Varianten pagina */
+
+/* ik heb een class aan de body van de detailpagina toegevoegd zodat ik zo min mogelijk classes gebruik maar wel dingen op de detailpagina kan aanspreken zonder dat de indexpagina veranderd */
+
+.Varianten article {
     padding: 1em;
 }
 
+.Varianten h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.8em;
+}
 
+.Varianten article img {
+    width: 95vw;
+    max-height: 50vh;
+}
 
-/* Varianten pagina WERKT NIET! */
+.Varianten article p {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    white-space: pre-line;
+    text-align: center;
+}
+
 button {
     color: red;
     text-transform: uppercase;
     letter-spacing: 3px;
     border: none;
-    padding: 1em 2em;
+    padding: 1em 6em;
+    margin-bottom: 30px;
     background-color: darkgrey;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in;
 }
 
 button:hover {
@@ -197,10 +283,6 @@ button:hover {
     background-color: dimgrey;
 }
 
-p {
-    white-space: pre-line;
-    padding: 0 30px;
-}
 
 h1 {
     color: white;
@@ -212,15 +294,74 @@ h1 {
 }
 
 /* MEDIA QUERIES */
-
-/* Mobile */
-
-
-/* Ipad */
-
+/* LOGO */
 @media screen and (min-width: 800px) {
+    nav ul li:nth-of-type(2) img {
+        width: 7em;
+        height: 7em;
+    }
+
+    nav ul li:nth-of-type(2) img:hover {
+        height: 7em;
+    }
+
     section:first-of-type {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+/* Mobile */
+@media screen and (min-width: 520px) {
+    header {
+        background-image: url(../images/beginafbeelding.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Ipad */
+@media screen and (min-width: 850px) {
+    .Varianten article p, .Varianten article h3 {
+        text-align: justify;
+    }
+
+    .Varianten .tekstcontent {
+        max-width: 45vw;
+        padding: 0em 4em;
+    }
+
+    /* zodat artikelen elkaar niet overlappen */
+    .Varianten article, .tekstcontent {
+        width: 100vw;
+        height: 50vh;        
+        margin-bottom: 50px;
+    }
+    
+    .Varianten article img {
+        height: 60vh;
+        width: 47vw;
+    }
+    /* artikelen waarbij afbeelding links gepositioneerd staan */
+    .Varianten article:first-of-type img,
+    .Varianten article:nth-of-type(3) img {
+        float: left;
+    }
+
+    .Varianten article:first-of-type .tekstcontent,
+    .Varianten article:nth-of-type(3) .tekstcontent {
+        float: right;
+    }
+
+    /* artikelen waarbij afbeelding rechts gepositioneerd staan */
+    .Varianten article:nth-of-type(2) .tekstcontent,
+    .Varianten article:last-of-type .tekstcontent {
+        float: left;
+    }
+
+    .Varianten article:nth-of-type(2) img,
+    .Varianten article:last-of-type img {
+        float: right;
     }
 
 }

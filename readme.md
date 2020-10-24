@@ -85,6 +85,16 @@ Week 6
 Begin deze week heb ik geoefend met toegankelijkheid, wat ik erg interessant vond. Verder ben ik veel gaan uitproberen met mijn eigen site. Dit ging echter helemaal mis wat veel frustraties opleverde. Het gebeurde vaak dat elementen niet (juist) aangesproken werden. Ik hoop meer duidelijkheid te krijgen over deze onderwerpen tijdens het laatste voortgangsgesprek.
 In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaast heb ik de hover van de afbeeldingen op de homepagina soepeler laten verlopen. 
 ![Screenshot week 6 tweede pagina](images/Screenshotweek6.png)
+
+Weken tot aan beoordeling - Week 7 en 8
+De laatste weken heb ik mijn site tot in de puntjes uitgewerkt. Ik heb de afbeelding van de header op de index pagina veranderd van bron met een mediuequery zoals de orginele site dit ook heeft gedaan, waardoor de site meer responsive is geworden. 
+![Screenshot Header](images/Week7:8.HeaderAfbeelding)
+Ik heb de kinderziektes, zoals Danny dat zelf zegt, verwijderd uit de navigatie van de header en de footer waardoor alles er nu strak uitziet. 
+![Screenshot navigatie](images/Week7:8.NetteNav.png)
+![Screenshot footer](images/Week7:8.NetteFooter.png)
+De detailpagina is nu responsive en vormgegeven zoals het orgineel. 
+![Screenshot Detailpagina](images/Week7:8.Detailpagina)
+
 ### Agenda voor meeting
 Agende donderdag 17 sept:
 Jan Willem van Kempen 
