@@ -11,4 +11,14 @@ function klapopen() {
     Main.classList.toggle('vast');
 }
 
-document.body.scrollTop > 50
+
+var knopje = document.getElementsByClassName('.Vergrootglas');
+var inhoud = document.querySelector('ul:nth-of-type(3)');
+
+knopje.addEventListener('click', zichtbaar);
+
+function zichtbaar() {
+    inhoud.classList.add('Open');
+}
+
+var kruisje = document.querys

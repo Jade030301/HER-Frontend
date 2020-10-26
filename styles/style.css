@@ -28,6 +28,7 @@ ul {
 header {
     background-image: url(../images/beginafbeeldingMobiel.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     height: 95vh;
 }
 
@@ -37,7 +38,7 @@ header ul:nth-of-type(1) {
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-between;
     padding: 10px 30px 0 0;
 }
@@ -47,9 +48,10 @@ header ul:nth-of-type(1) {
     cursor: pointer;
 }
 
-.HamburgerClass figcaption {
+header figcaption {
     text-transform: uppercase;
     text-shadow: none;
+    font-weight: lighter;
     position: absolute;
     top: 8px;
     left: 35px;
@@ -76,19 +78,46 @@ nav ul li:nth-of-type(2) img:hover {
     height: 5em;
 }
 
-/* Vergrootglas knopje */
+/* Inloggen*/
+header ul:nth-of-type(2) li:last-of-type {
+    margin-right: 20px;
+}
 
-header ul:first-of-type li:nth-of-type(3) {
-    width: 2em;
+
+.InloggenClass {
+    display: none;
+    position: absolute;
+    right: 15vw;
+}
+
+.InloggenClass img {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.InloggenClass img:hover {
+    height: 25px;
+}
+
+.InloggenClass figcaption {
+    top: 8px;
+}
+
+/* Vergrootglas knopje */
+.Vergrootglas {
+    width: 3em;
     height: 2em;
-    padding-top: 20px;
+    padding-left: 1em;
+    margin-top: 20px;
 }
 
 /* Inhoud hamburger menu */
 
 ul:nth-of-type(2) {
+    font-weight: lighter;
     color: black;
-    background-color: palevioletred;
+    background-color: white;
     display: flex;
     flex-direction: column;
     max-width: 45vw;
@@ -118,6 +147,40 @@ a {
     color: black;
 }
 
+header ul:nth-of-type(2) li:nth-of-type(3) {
+    color: grey;
+}
+
+/* Kopjes binnen de hamburger content */
+header ul:nth-of-type(2) li:first-of-type {
+    padding-top: 3em;
+}
+
+header ul:nth-of-type(2) li:first-of-type,
+header ul:nth-of-type(2) li:nth-of-type(4),
+header ul:nth-of-type(2) li:nth-of-type(6) {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 0.8em;
+    padding-bottom: 0;
+}
+
+header ul:nth-of-type(2) li:first-of-type:hover,
+header ul:nth-of-type(2) li:nth-of-type(4):hover,
+header ul:nth-of-type(2) li:nth-of-type(6):hover {
+    background-color: white;
+}
+
+/* social media hamburgermenu */
+header ul:nth-of-type(2) img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+}
+
+header ul:nth-of-type(2) li:nth-of-type(5) {
+    background-color: white;
+}
 
 /* class om de navigatie zichbaar te maken voor java */
 ul:nth-of-type(2).actief {
@@ -136,6 +199,57 @@ main.vast {
 }
 
 
+/* inhoud zoek form */
+header nav ul:last-of-type {
+    background-color: white;
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translate(60vw);
+}
+
+.Open {
+    transform: translate(0vw);
+}
+
+header nav ul:last-of-type li:first-of-type img {
+    height: 20px;
+    width: 20px;
+    margin: 35px 0 0 10px;
+}
+
+header nav ul:last-of-type form {
+    padding: 30px 0;
+}
+
+header nav ul:last-of-type form input {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lightgray;
+    width: 30vw;
+    height: 30px;
+}
+
+header nav ul:last-of-type form input::placeholder {
+    color: grey;
+    letter-spacing: 0.8px;
+}
+
+header nav ul:last-of-type li:last-of-type {
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 25px;
+}
+
+header nav ul:last-of-type li:last-of-type:hover {
+    color: red;
+}
+
 /* MAIN */
 
 section h2 {
@@ -149,7 +263,7 @@ section h2 {
 
 h3 {
     color: dimgrey;
-    font-weight: normal;
+    width:
 }
 
 section {
@@ -226,6 +340,7 @@ footer nav ul {
 
 footer nav ul li {
     font-weight: bold;
+    font-size: 0.7em;
     letter-spacing: 1px;
     color: white;
     padding: 10px;
@@ -284,13 +399,20 @@ button:hover {
 }
 
 
+.Varianten header {
+    background-image: url(../images/Variantenbeginafbeelding.jpg);
+}
+
 h1 {
     color: white;
-    font-weight: normal;
-    background-image:
-        url(../images/Variantenbeginafbeelding.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 60%;
+    position: absolute;
+    top: 70vh;
+    left: 20%;
+    right: 20%;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 /* MEDIA QUERIES */
@@ -312,17 +434,28 @@ h1 {
 }
 
 /* Mobile */
+@media screen and (min-width: 340px) {
+    footer nav ul li {
+        font-size: 1em;
+    }
+}
+
 @media screen and (min-width: 520px) {
     header {
         background-image: url(../images/beginafbeelding.jpg);
         background-size: cover;
         background-position: center;
     }
+    .Varianten header {
+        background-image: url(../images/VariantenBeginafbeelding.Groot.jpg)
+    }
 }
 
 /* Ipad */
 @media screen and (min-width: 850px) {
-    .Varianten article p, .Varianten article h3 {
+
+    .Varianten article p,
+    .Varianten article h3 {
         text-align: justify;
     }
 
@@ -332,16 +465,17 @@ h1 {
     }
 
     /* zodat artikelen elkaar niet overlappen */
-    .Varianten article, .tekstcontent {
+    .Varianten article {
         width: 100vw;
-        height: 50vh;        
+        min-height: 50vh;
         margin-bottom: 50px;
     }
-    
+
     .Varianten article img {
-        height: 60vh;
+        height: 100vh;
         width: 47vw;
     }
+
     /* artikelen waarbij afbeelding links gepositioneerd staan */
     .Varianten article:first-of-type img,
     .Varianten article:nth-of-type(3) img {
@@ -364,7 +498,20 @@ h1 {
         float: right;
     }
 
+    /* Voor meer ruimte tussen het laatste artikel en de footer */
+    .Varianten article:last-of-type {
+        margin-bottom: 100px;
+    }
 }
 
 
 /* Desktop */
+@media screen and (min-width: 900px) {
+    .InloggenClass {
+        display: block;
+    }
+
+    .Vergrootglas {
+        border-left: 1px solid white;
+    }
+}

@@ -8,6 +8,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. - https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit -
 2. - https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering#:~:text=Wrap%20the%20image%20and%20the,appear%20while%20hovering%20that%20div.&text=You%20can%20also%20do%20the,alt%20text%20of%20your%20image. -
+3. - https://css-tricks.com/almanac/selectors/p/placeholder/ -
 
 
 ## Eindgesprek (week 7/8)
