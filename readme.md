@@ -55,21 +55,22 @@ Ik ben van plan deze tips nog toe te passen in de volgende weken, verder vond La
 
 ### Stand van zaken
 
-Week 1 
+**Week 1** 
 In week 1 heb ik de huiswerkopdrachten gemaakt, wat best goed verliep. Ik heb gekozen om de Coca-Cola website na te maken en heb de read-me ingevuld, aan de html/css/java heb ik niks toegevoegd. Met de huiswerkoefeningen heb ik geleerd hoe ik teksten kan aanpassen. Helaas kon ik die week niet bij de werkgroep zijn dus heb ik daar ook niets toegevoegd aan mijn werk.  
 
-Week 2
+**Week 2**
 Deze week heb ik de oefeningen over positionering gemaakt en heb ik super veel geleerd over de plaatsing van de elementen, dit ging erg goed. Danny raadde ons aan om alvast te beginnen met onze eigen website en dat heb ik ook gedaan. Ik had de basis van HTML, de kopjes p en afbeeldingen, toegevoegd en had de CSS even achterwege gelaten. Dit kostte helaas meer tijd dan ik had verwacht waardoor ik geen tijd heb gehad om te oefenen met flexbox. Wel heb ik de theorie doorgenomen. Ik ben van plan de oefeningen op een ander moment alsnog te maken.
+
 ![afbeelding week 2](images/Screenshotweek2.png)
 
-Week 3
+**Week 3**
 Deze week heb ik oefeningen van Javascript gemaakt en ik moet eerlijk zeggen dat ik er helemaal draaierig van werd. Tijdens de werkgroep legde Danny gelukkig duidelijk uit hoe alles werkte, zodat ik het beter begreep. De rest van de week heb ik hard aan mijn eigen website gewerkt. Ik begon met de navigatie, die een hamburger menu heeft, maar begreep er al vrij snel niets van. Ik heb ervoor gekozen mij dus eerst te gaan richten op de rest van de website, wat gelukkig erg goed ging en ik kreeg weer wat hoop. Ik heb toegepast wat ik vorige week heb geleerd m.b.t positionering en teksten. Zo heb ik d.m.v positionering tekst op afbeelding zichtbaar gemaakt met een hover. Ook heb ik de vormgeving iets mooier gemaakt. De mobile first van de eerste pagina is nu zo goed als af, op de navigatie na. Ik ben van plan eerst de flexbox opdrachten van week 2 te maken en als ik het dan nog niet begrijp hulp te vragen aan een docent assistent. 
 ![afbeelding week 3](images/Screenshotweek3.png)
 
-Week 4
+**Week 4**
 Ik heb oefeningen met Grid en Media Queries gemaakt. Hier heb ik vorig jaar ook mee gewerkt en ik merk dat ik het nu makkelijker (vind klinken) dan voorheen dus dat is echt een vooruitgang. Ik kijk er naar uit dit toe te passen op mijn website maar heb er deze week helaas geen tijd voor omdat mijn Behaviour Design vakken extreem veel tijd in beslag nemen. Ik hoop volgende week nog het een en ander te kunnen doen voor het volgende voortgangsgesprek.
 
-Week 5
+**Week 5**
 Ik heb het super druk gehad en het kwam helaas niet uit om maandag de les bij te wonen, ik heb een middag hard gewerk aan mijn website maar heb helaas minder kunnen doen dan gehoopt, ik moet komende week nog even hard aan de slag voor het laatste voortgangsgesprek van volgende week. 
 Dit heb ik aangepast sinds vorig voortgangsgesprek:
 - Grid toegevoegd
@@ -81,52 +82,75 @@ Dit heb ik aangepast sinds vorig voortgangsgesprek:
 ![Screenshot navigatie](images/Screenshotweek5.Navigatie.png)
 ![Screenshot navigatie](images/Screenshotweek5.Grid.png)
 
-Week 6
+**Week 6**
 Begin deze week heb ik geoefend met toegankelijkheid, wat ik erg interessant vond. Verder ben ik veel gaan uitproberen met mijn eigen site. Dit ging echter helemaal mis wat veel frustraties opleverde. Het gebeurde vaak dat elementen niet (juist) aangesproken werden. Ik hoop meer duidelijkheid te krijgen over deze onderwerpen tijdens het laatste voortgangsgesprek.
-In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaast heb ik de hover van de afbeeldingen op de homepagina soepeler laten verlopen. 
+In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaast heb ik de hover van de afbeeldingen op de homepagina soepeler laten verlopen.
+
 ![Screenshot week 6 tweede pagina](images/Screenshotweek6.png)
 
-Weken tot aan beoordeling - Week 7 en 8
+
+**Weken tot aan beoordeling - Week 7 en 8**
 De laatste weken heb ik mijn site tot in de puntjes uitgewerkt. Ik heb de afbeelding van de header op de index pagina veranderd van bron met een mediuequery zoals de orginele site dit ook heeft gedaan, waardoor de site meer responsive is geworden. 
 ![Screenshot Header](images/Week7:8.HeaderAfbeelding,png)
 Ik heb de kinderziektes, zoals Danny dat zelf zegt, verwijderd uit de navigatie van de header en de footer waardoor alles er nu strak uitziet. 
+
 ![Screenshot navigatie](images/Week7:8.NetteNav.png)
 ![Screenshot footer](images/Week7:8.NetteFooter.png)
+
 De content van het hamburger menu is nu compleet en vormgegeven als het origineel. 
+
 ![Screenshot Detailpagina](images/Week7:8.HamburgerContent.png)
+
 De detailpagina is nu responsive en vormgegeven zoals het orgineel. 
+
 ![Screenshot Detailpagina](images/Week7:8.Detailpagina.png)
+
 Ik had het gevoel dat mijn code niet semantisch correct was en heb daarom help gevraagd aan de student-assistent Lars. Hij vertelde mij dat mijn header navigatie inderdaad semantischer kon en heeft mij wat tips gegeven hoe ik dit kon doen. Ik heb dit nu aangepast: de vormgeving is niets veranderd, de code in mijn html wel. 
 Verder heb ik een tweede microinteractie toegevoegd. Deze verschijnt wanneer je op het vergrootglas icoontje klikt en opent een zoekvenster. Deze microinteractie bestaat uit add en remove van een class waar de andere microinteractie een toggle is. 
+
 ![Screenshot 2e microinteractie](images/Week7:8.TweedeMicrointeractie.png)
-Ook heb ik een focus toegevoegd de hamburger- en zoekknopjes door deze in een 'a' element te zetten zodat de site toegankelijk is voor keyboard en de gebruiker weet dat deze onderdelen klikbaar zijn.  
+
+Ook heb ik een focus toegevoegd de hamburger- en zoekknopjes door deze in een 'a' element te zetten zodat de site toegankelijk is voor keyboard en de gebruiker weet dat deze onderdelen klikbaar zijn. 
+
 ![Screenshot Toegankelijkheid](images/Toegankelijkheid.png)
 
 ### Agenda voor meeting
 **Agende donderdag 17 sept:**
+
+
 Jan Willem van Kempen 
-Items (list) naast elkaar plaatsen, witte regels tussen afbeeldingen, tekst verdwijnen achter afbeeldingen
+- Items (list) naast elkaar plaatsen
+- Witte regels tussen afbeeldingen
+- Wekst verdwijnen achter afbeeldingen
+
 
 Souraya Hammaoui 
-Grid, carrousel
+- Grid
+- Carrousel
+
 
 Walter van Koesveld
-Bovenstaande punten
+- Bovenstaande punten
+
 
 Jade Dionisio Pires
-Navigatie in header en footer
+- Navigatie in header en footer
 
 
 **Agenda donderdag 30 sept:**
+
+
 Jade Dionisio Pires
 - Column gap wordt ineens heel groot
 - 3 column grid claimt een plek voor een 4e column die er niet is
 - alle fbeeldingen behalve de eerste zijn heel smal in het grid
 - javascript werkt niet
 
+
 Walter van Koesveld
 - Image repeat
 - Lijst met kolommen die niet goed te verdelen zijn
+
 
 Jan Willem van Kempen
 - Grid in hamburger menu werkt niet
@@ -134,7 +158,10 @@ Jan Willem van Kempen
 - Transparant border uitgevouwen hamburgermenu
 - Text wil niet centreren
 
+
 **Agenda donderdag 8 oktober:**
+
+
 Jade Dionisio Pires
 - Witruimte om nav die niet weggaat
 - Nav als overlay over content laten vallen (ook als main content fixed is)
