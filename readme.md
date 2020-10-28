@@ -63,13 +63,19 @@ Deze week heb ik de oefeningen over positionering gemaakt en heb ik super veel g
 
 ![afbeelding week 2](images/Screenshotweek2.png)
 
+
+
 **Week 3**
 Deze week heb ik oefeningen van Javascript gemaakt en ik moet eerlijk zeggen dat ik er helemaal draaierig van werd. Tijdens de werkgroep legde Danny gelukkig duidelijk uit hoe alles werkte, zodat ik het beter begreep. De rest van de week heb ik hard aan mijn eigen website gewerkt. Ik begon met de navigatie, die een hamburger menu heeft, maar begreep er al vrij snel niets van. Ik heb ervoor gekozen mij dus eerst te gaan richten op de rest van de website, wat gelukkig erg goed ging en ik kreeg weer wat hoop. Ik heb toegepast wat ik vorige week heb geleerd m.b.t positionering en teksten. Zo heb ik d.m.v positionering tekst op afbeelding zichtbaar gemaakt met een hover. Ook heb ik de vormgeving iets mooier gemaakt. De mobile first van de eerste pagina is nu zo goed als af, op de navigatie na. Ik ben van plan eerst de flexbox opdrachten van week 2 te maken en als ik het dan nog niet begrijp hulp te vragen aan een docent assistent. 
 
 ![afbeelding week 3](images/Screenshotweek3.png)
 
+
+
 **Week 4**
 Ik heb oefeningen met Grid en Media Queries gemaakt. Hier heb ik vorig jaar ook mee gewerkt en ik merk dat ik het nu makkelijker (vind klinken) dan voorheen dus dat is echt een vooruitgang. Ik kijk er naar uit dit toe te passen op mijn website maar heb er deze week helaas geen tijd voor omdat mijn Behaviour Design vakken extreem veel tijd in beslag nemen. Ik hoop volgende week nog het een en ander te kunnen doen voor het volgende voortgangsgesprek.
+
+
 
 **Week 5**
 Ik heb het super druk gehad en het kwam helaas niet uit om maandag de les bij te wonen, ik heb een middag hard gewerk aan mijn website maar heb helaas minder kunnen doen dan gehoopt, ik moet komende week nog even hard aan de slag voor het laatste voortgangsgesprek van volgende week. 
@@ -83,11 +89,15 @@ Dit heb ik aangepast sinds vorig voortgangsgesprek:
 ![Screenshot navigatie](images/Screenshotweek5.Navigatie.png)
 ![Screenshot navigatie](images/Screenshotweek5.Grid.png)
 
+
+
 **Week 6**
 Begin deze week heb ik geoefend met toegankelijkheid, wat ik erg interessant vond. Verder ben ik veel gaan uitproberen met mijn eigen site. Dit ging echter helemaal mis wat veel frustraties opleverde. Het gebeurde vaak dat elementen niet (juist) aangesproken werden. Ik hoop meer duidelijkheid te krijgen over deze onderwerpen tijdens het laatste voortgangsgesprek.
 In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaast heb ik de hover van de afbeeldingen op de homepagina soepeler laten verlopen.
 
 ![Screenshot week 6 tweede pagina](images/Screenshotweek6.png)
+
+
 
 
 **Weken tot aan beoordeling - Week 7 en 8**
