@@ -65,6 +65,7 @@ Deze week heb ik de oefeningen over positionering gemaakt en heb ik super veel g
 
 **Week 3**
 Deze week heb ik oefeningen van Javascript gemaakt en ik moet eerlijk zeggen dat ik er helemaal draaierig van werd. Tijdens de werkgroep legde Danny gelukkig duidelijk uit hoe alles werkte, zodat ik het beter begreep. De rest van de week heb ik hard aan mijn eigen website gewerkt. Ik begon met de navigatie, die een hamburger menu heeft, maar begreep er al vrij snel niets van. Ik heb ervoor gekozen mij dus eerst te gaan richten op de rest van de website, wat gelukkig erg goed ging en ik kreeg weer wat hoop. Ik heb toegepast wat ik vorige week heb geleerd m.b.t positionering en teksten. Zo heb ik d.m.v positionering tekst op afbeelding zichtbaar gemaakt met een hover. Ook heb ik de vormgeving iets mooier gemaakt. De mobile first van de eerste pagina is nu zo goed als af, op de navigatie na. Ik ben van plan eerst de flexbox opdrachten van week 2 te maken en als ik het dan nog niet begrijp hulp te vragen aan een docent assistent. 
+
 ![afbeelding week 3](images/Screenshotweek3.png)
 
 **Week 4**
@@ -91,7 +92,7 @@ In vergelijking met vorige week heb ik nu een Tweede pagina toegevoegd. Daarnaas
 
 **Weken tot aan beoordeling - Week 7 en 8**
 De laatste weken heb ik mijn site tot in de puntjes uitgewerkt. Ik heb de afbeelding van de header op de index pagina veranderd van bron met een mediuequery zoals de orginele site dit ook heeft gedaan, waardoor de site meer responsive is geworden. 
-![Screenshot Header](images/Week7:8.HeaderAfbeelding,png)
+![Screenshot Header](images/Week7:8.HeaderAfbeelding.png)
 Ik heb de kinderziektes, zoals Danny dat zelf zegt, verwijderd uit de navigatie van de header en de footer waardoor alles er nu strak uitziet. 
 
 ![Screenshot navigatie](images/Week7:8.NetteNav.png)
@@ -137,6 +138,8 @@ Jade Dionisio Pires
 - Navigatie in header en footer
 
 
+
+
 **Agenda donderdag 30 sept:**
 
 
@@ -157,6 +160,8 @@ Jan Willem van Kempen
 - Hamburger menu is niet scrollbaar
 - Transparant border uitgevouwen hamburgermenu
 - Text wil niet centreren
+
+
 
 
 **Agenda donderdag 8 oktober:**
