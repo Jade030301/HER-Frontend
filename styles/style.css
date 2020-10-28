@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* hierdoor kan er niet gescrollt worden naar links en rechts waardoor voorkomen wordt dat je scrollt naar de microinteracties buiten het scherm */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     padding: 0px;
     margin: 0;
@@ -12,7 +19,7 @@ body {
     text-align: center;
 }
 
-/* voorkomt dat de image buiten de vw komt */
+/* voorkomt dat de image buiten de vw komt, max-width op html en body is niet genoeg */
 img {
     max-width: 100%;
 }
@@ -24,12 +31,22 @@ ul {
     margin: 0;
 }
 
-/* Achtergrondafbeelding van de header*/
+li {
+    list-style: none;
+}
+
+/* Achtergrondafbeeldingen van de header*/
 header {
     background-image: url(../images/beginafbeeldingMobiel.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    width: 100vw;
     height: 95vh;
+    transition: 0.2s ease;
+}
+
+.Varianten header {
+    background-image: url(../images/Variantenbeginafbeelding.jpg);
 }
 
 /* Inhoud hoofdmenu */
@@ -43,11 +60,12 @@ header ul:nth-of-type(1) {
     padding: 10px 30px 0 0;
 }
 
-/* Hamburger knopje*/
-.HamburgerClass {
+/* hierdoor weet gebruiker dat je op de items in het navigatie menu kunt klikken */
+header ul:nth-of-type(1) li {
     cursor: pointer;
 }
 
+/* Hamburger knopje*/
 header figcaption {
     text-transform: uppercase;
     text-shadow: none;
@@ -64,6 +82,7 @@ header figcaption {
     height: 2em;
 }
 
+/* hover van andere afbeeldingen wordt overgenomen maar deze afbeelding hoort geen hover te krijgen vandaar het geven van dezelfde hoogte als normaal */
 .HamburgerClass img:hover {
     height: 2em;
 }
@@ -72,36 +91,26 @@ header figcaption {
 nav ul li:nth-of-type(2) img {
     width: 5em;
     height: 5em;
+    transition: 0.3s ease;
 }
 
+/* zie uitleg boven .HamburgerClass img:hover regel 85 */
 nav ul li:nth-of-type(2) img:hover {
     height: 5em;
 }
 
 /* Inloggen*/
-header ul:nth-of-type(2) li:last-of-type {
-    margin-right: 20px;
-}
-
-
-.InloggenClass {
-    display: none;
+header nav ul:nth-of-type(2) li figure {
     position: absolute;
     right: 15vw;
+    top: 15px;
+    display: none;
 }
 
-.InloggenClass img {
+header nav ul:nth-of-type(2) li figure img {
     width: 25px;
     height: 25px;
-    margin-top: 5px;
-}
-
-.InloggenClass img:hover {
-    height: 25px;
-}
-
-.InloggenClass figcaption {
-    top: 8px;
+    margin-top: 4px;
 }
 
 /* Vergrootglas knopje */
@@ -112,78 +121,93 @@ header ul:nth-of-type(2) li:last-of-type {
     margin-top: 20px;
 }
 
-/* Inhoud hamburger menu */
-
-ul:nth-of-type(2) {
-    font-weight: lighter;
-    color: black;
+/* INHOUD HAMBURGER MENU */
+header div:first-of-type {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    max-width: 45vw;
+    max-width: 60vw;
     max-height: 100vh;
     overflow: scroll;
     transform: translateX(-80vw);
     transition: 0.8s ease;
 }
 
-ul:nth-of-type(2) li {
-    font-size: 1.5em;
-    padding: 1em;
+header div:first-of-type ul:first-of-type,
+header div:first-of-type ul:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 0;
 }
 
-ul:nth-of-type(2) li:last-of-type {
+/* Kopjes binnen hamburger menu */
+header div:first-of-type h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: grey;
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+header div:first-of-type h3:first-of-type {
+    margin-top: 3em;
+}
+
+/* List items binnen hamburger menu */
+header div:first-of-type ul:first-of-type li,
+header div:first-of-type ul:nth-of-type(3) li {
+    color: black;
+    font-size: 1.5em;
+    font-weight: lighter;
+    list-style: none;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+header div:first-of-type ul:first-of-type li:hover,
+header div:first-of-type ul:nth-of-type(3) li:hover {
+    background-color: lightgrey;
+    transition: 0.3s linear;
+}
+
+header div:first-of-type ul:nth-of-type(3) li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Specifieke andere vormgeving binnen de list items */
+header div:first-of-type ul:first-of-type li:first-of-type {
+    text-transform: uppercase;
+}
+
+header div:first-of-type ul:first-of-type li:nth-of-type(2) {
+    color: grey;
+}
+
+header div:first-of-type ul:last-of-type li:last-of-type {
     color: red;
 }
 
-ul:nth-of-type(2) li:hover {
-    background-color: lightgrey;
+/* Social media list items */
+header div:first-of-type ul:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-li,
-a {
-    text-decoration: none;
-    list-style: none;
-    color: black;
+header div:first-of-type ul:nth-of-type(2) img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px 0px;
 }
 
-header ul:nth-of-type(2) li:nth-of-type(3) {
-    color: grey;
-}
-
-/* Kopjes binnen de hamburger content */
-header ul:nth-of-type(2) li:first-of-type {
-    padding-top: 3em;
-}
-
-header ul:nth-of-type(2) li:first-of-type,
-header ul:nth-of-type(2) li:nth-of-type(4),
-header ul:nth-of-type(2) li:nth-of-type(6) {
-    text-transform: uppercase;
-    color: grey;
-    font-size: 0.8em;
-    padding-bottom: 0;
-}
-
-header ul:nth-of-type(2) li:first-of-type:hover,
-header ul:nth-of-type(2) li:nth-of-type(4):hover,
-header ul:nth-of-type(2) li:nth-of-type(6):hover {
-    background-color: white;
-}
-
-/* social media hamburgermenu */
-header ul:nth-of-type(2) img {
-    width: 40px;
-    height: 40px;
-    padding: 2px;
-}
-
-header ul:nth-of-type(2) li:nth-of-type(5) {
-    background-color: white;
+/* zie uitleg boven .HamburgerClass img:hover regel 85 */
+header div:first-of-type ul:nth-of-type(2) img:hover {
+    height: 50px;
 }
 
 /* class om de navigatie zichbaar te maken voor java */
-ul:nth-of-type(2).actief {
+header div:first-of-type.actief {
     transform: translateX(0);
     position: absolute;
     top: 70px;
@@ -192,15 +216,13 @@ ul:nth-of-type(2).actief {
 }
 
 /* class om de main te laten stoppen met scrollen als hamburgermenu open is voor java */
-
 main.vast {
     position: fixed;
     max-height: 100vw;
 }
 
-
-/* inhoud zoek form */
-header nav ul:last-of-type {
+/* inhoud zoekvenster */
+header nav div:nth-of-type(2) {
     background-color: white;
     width: 50vw;
     position: absolute;
@@ -210,24 +232,35 @@ header nav ul:last-of-type {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    transform: translate(60vw);
+    transform: translateX(60vw);
+    transition: 0.8s ease;
 }
 
-.Open {
-    transform: translate(0vw);
+header nav div:nth-of-type(2) ul {
+    padding: 10px 0px;
 }
 
-header nav ul:last-of-type li:first-of-type img {
+/* class om de zoekvenster zichbaar te maken voor java */
+header nav div:nth-of-type(2).Open {
+    transform: translateX(0vw);
+}
+
+header nav div:nth-of-type(2) li {
+    margin-top: 25px;
+}
+
+header nav div:nth-of-type(2) li:first-of-type img {
     height: 20px;
     width: 20px;
-    margin: 35px 0 0 10px;
+    margin: 4px 10px 0 0;
 }
 
-header nav ul:last-of-type form {
+header nav div:nth-of-type(2)form {
     padding: 30px 0;
+    margin-top: 25px;
 }
 
-header nav ul:last-of-type form input {
+header nav div:nth-of-type(2) form input {
     border: 1px solid black;
     padding: 10px;
     background-color: lightgray;
@@ -235,23 +268,25 @@ header nav ul:last-of-type form input {
     height: 30px;
 }
 
-header nav ul:last-of-type form input::placeholder {
+header nav div:nth-of-type(2) form input::placeholder {
     color: grey;
     letter-spacing: 0.8px;
 }
 
-header nav ul:last-of-type li:last-of-type {
+header nav div:nth-of-type(2) ul li:nth-of-type(3) {
+    color: black;
     font-size: 2em;
     font-weight: lighter;
-    margin-top: 25px;
+    margin: 23px 0 0 10px;
 }
 
-header nav ul:last-of-type li:last-of-type:hover {
+header nav div:nth-of-type(2) ul li:nth-of-type(3):hover {
     color: red;
+    transition: 0.3s ease;
+    height: 10px;
 }
 
 /* MAIN */
-
 section h2 {
     font-weight: normal;
     color: white;
@@ -263,7 +298,7 @@ section h2 {
 
 h3 {
     color: dimgrey;
-    width:
+    font-weight: normal;
 }
 
 section {
@@ -271,20 +306,20 @@ section {
     column-gap: 10px;
 }
 
+section img {
+    width: 90vw;
+}
 
 section:nth-of-type(2) {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+/* De afbeeldingen veranderen van grootte wannneer dit niet genoteerd staat 
 section:nth-of-type(2) article figure {
     overflow: hidden;
 }
 
-section:nth-of-type(2) article figure img:hover {
-    transform: scale(1.1);
-    height: 370px;
-}
-
+/* Zo blijft de heading in de gehele breedte over het  grid staan */
 section > h2 {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -305,6 +340,12 @@ figure img:hover {
     height: 400px;
 }
 
+/* section 2 heeft een andere hover dan section 1 dit is een inzoom effect*/
+section:nth-of-type(2) article figure img:hover {
+    transform: scale(1.1);
+    height: 370px;
+}
+
 figcaption {
     text-shadow: 1px 1px 2px black;
     position: absolute;
@@ -321,7 +362,6 @@ figure:hover figcaption {
 }
 
 /* FOOTER */
-
 footer {
     font-weight: lighter;
     color: white;
@@ -354,13 +394,13 @@ footer nav ul li:last-of-type {
 footer nav ul li:hover {
     color: black;
     cursor: pointer;
+    transition: 1s ease-in-out;
 }
 
 /* Varianten pagina */
-
 /* ik heb een class aan de body van de detailpagina toegevoegd zodat ik zo min mogelijk classes gebruik maar wel dingen op de detailpagina kan aanspreken zonder dat de indexpagina veranderd */
-
-.Varianten article {
+.Varianten article,
+.tekstcontent {
     padding: 1em;
 }
 
@@ -371,8 +411,8 @@ footer nav ul li:hover {
 }
 
 .Varianten article img {
-    width: 95vw;
-    max-height: 50vh;
+    width: 90vw;
+    height: 50vh;
 }
 
 .Varianten article p {
@@ -398,11 +438,6 @@ button:hover {
     background-color: dimgrey;
 }
 
-
-.Varianten header {
-    background-image: url(../images/Variantenbeginafbeelding.jpg);
-}
-
 h1 {
     color: white;
     width: 60%;
@@ -415,25 +450,24 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* MEDIA QUERIES */
-/* LOGO */
-@media screen and (min-width: 800px) {
-    nav ul li:nth-of-type(2) img {
-        width: 7em;
-        height: 7em;
-    }
-
-    nav ul li:nth-of-type(2) img:hover {
-        height: 7em;
-    }
-
-    section:first-of-type {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
+/* Delen onderaan varianten pagina */
+.Varianten h3:last-of-type {
+    text-transform: none;
 }
 
-/* Mobile */
+.Varianten main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Varianten main ul li img {
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+/* MEDIA QUERIES, responsiveness */
 @media screen and (min-width: 340px) {
     footer nav ul li {
         font-size: 1em;
@@ -446,72 +480,102 @@ h1 {
         background-size: cover;
         background-position: center;
     }
+
     .Varianten header {
         background-image: url(../images/VariantenBeginafbeelding.Groot.jpg)
     }
 }
 
-/* Ipad */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
 
-    .Varianten article p,
-    .Varianten article h3 {
-        text-align: justify;
+    /* LOGO */
+    nav ul:first-of-type li:nth-of-type(2) img {
+        width: 7em;
+        height: 7em;
     }
 
-    .Varianten .tekstcontent {
-        max-width: 45vw;
-        padding: 0em 4em;
+    nav ul li:nth-of-type(2) img:hover {
+        height: 7em;
     }
 
-    /* zodat artikelen elkaar niet overlappen */
-    .Varianten article {
-        width: 100vw;
-        min-height: 50vh;
-        margin-bottom: 50px;
+    /* Eerste sectie homepage, 3 columns grid */
+    section:first-of-type {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .Varianten article img {
-        height: 100vh;
-        width: 47vw;
+        max-height: 90vh;
     }
 
-    /* artikelen waarbij afbeelding links gepositioneerd staan */
-    .Varianten article:first-of-type img,
-    .Varianten article:nth-of-type(3) img {
-        float: left;
+
+    @media screen and (min-width: 850px) {
+        .Varianten h1 {
+            width: 40%;
+            padding: none;
+            left: 5%;
+            top: 55vh;
+            right: inherit;
+            font-size: 30px;
+        }
+
+        .Varianten article p,
+        .Varianten article h3 {
+            text-align: justify;
+        }
+
+        .Varianten .tekstcontent {
+            max-width: 45vw;
+            padding: 0em 4em;
+        }
+
+        /* zodat artikelen elkaar niet overlappen */
+        .Varianten article {
+            width: 100vw;
+            height: 50vh;
+            margin-bottom: 50px;
+        }
+
+        .Varianten article img {
+            width: 47vw;
+        }
+
+        /* artikelen waarbij afbeelding links gepositioneerd staan */
+        .Varianten article:first-of-type img,
+        .Varianten article:nth-of-type(3) img {
+            float: left;
+        }
+
+        .Varianten article:first-of-type .tekstcontent,
+        .Varianten article:nth-of-type(3) .tekstcontent {
+            float: right;
+        }
+
+        /* artikelen waarbij afbeelding rechts gepositioneerd staan */
+        .Varianten article:nth-of-type(2) .tekstcontent,
+        .Varianten article:last-of-type .tekstcontent {
+            float: left;
+        }
+
+        .Varianten article:nth-of-type(2) img,
+        .Varianten article:last-of-type img {
+            float: right;
+        }
+
+        /* Voor meer ruimte tussen het laatste artikel en de footer */
+        .Varianten article:last-of-type {
+            margin-bottom: 100px;
+        }
     }
 
-    .Varianten article:first-of-type .tekstcontent,
-    .Varianten article:nth-of-type(3) .tekstcontent {
-        float: right;
-    }
 
-    /* artikelen waarbij afbeelding rechts gepositioneerd staan */
-    .Varianten article:nth-of-type(2) .tekstcontent,
-    .Varianten article:last-of-type .tekstcontent {
-        float: left;
-    }
+    @media screen and (min-width: 900px) {
 
-    .Varianten article:nth-of-type(2) img,
-    .Varianten article:last-of-type img {
-        float: right;
-    }
+        /* Zichtbaar maken van inloggen in de navigatie */
+        header nav ul:nth-of-type(2) li figure {
+            display: block;
+        }
 
-    /* Voor meer ruimte tussen het laatste artikel en de footer */
-    .Varianten article:last-of-type {
-        margin-bottom: 100px;
+        .Vergrootglas {
+            border-left: 1px solid white;
+        }
     }
-}
-
-
-/* Desktop */
-@media screen and (min-width: 900px) {
-    .InloggenClass {
-        display: block;
-    }
-
-    .Vergrootglas {
-        border-left: 1px solid white;
-    }
-}

@@ -1,14 +1,15 @@
 # Procesverslag
-**Auteur:** -Jade Dionisio Pires-
+**Auteur:** Jade Dionisio Pires
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
 
 ## Bronnenlijst
-1. - https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit -
-2. - https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering#:~:text=Wrap%20the%20image%20and%20the,appear%20while%20hovering%20that%20div.&text=You%20can%20also%20do%20the,alt%20text%20of%20your%20image. -
-3. - https://css-tricks.com/almanac/selectors/p/placeholder/ -
+1.  https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit 
+2.  https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering#:~:text=Wrap%20the%20image%20and%20the,appear%20while%20hovering%20that%20div.&text=You%20can%20also%20do%20the,alt%20text%20of%20your%20image. 
+3. https://css-tricks.com/almanac/selectors/p/placeholder/ 
+4.  https://stackoverflow.com/questions/27327765/how-to-get-a-img-tag-the-focus/27327915 
 
 
 ## Eindgesprek (week 7/8)
@@ -45,16 +46,14 @@ Docentbegeleider Lars heeft naar mijn website gekeken en gaf me de onderstaande 
 
 - Als je een hamburgermenu gaat maken, moet je erop letten dat deze navigatie niet 'hidden' is aangezien het dan niet toegankelijk is voor screenreaders.
 
--Bij de hover op de afbeeldingen kan je een transition toevoegen zodat het er wat fijner uitziet
+- Bij de hover op de afbeeldingen kan je een transition toevoegen zodat het er wat fijner uitziet
 
--De tekst over de afbeelding hoveren kan je beter doen door middel van figure i.p.v div
+- De tekst over de afbeelding hoveren kan je beter doen door middel van figure i.p.v div
 
 Ik ben van plan deze tips nog toe te passen in de volgende weken, verder vond Lars mijn website er tot nu toe prima uitzien. 
 
 
 ### Stand van zaken
-
--dit ging goed & dit was lastig -
 
 Week 1 
 In week 1 heb ik de huiswerkopdrachten gemaakt, wat best goed verliep. Ik heb gekozen om de Coca-Cola website na te maken en heb de read-me ingevuld, aan de html/css/java heb ik niks toegevoegd. Met de huiswerkoefeningen heb ik geleerd hoe ik teksten kan aanpassen. Helaas kon ik die week niet bij de werkgroep zijn dus heb ik daar ook niets toegevoegd aan mijn werk.  
@@ -97,9 +96,14 @@ De content van het hamburger menu is nu compleet en vormgegeven als het originee
 ![Screenshot Detailpagina](images/Week7:8.HamburgerContent.png)
 De detailpagina is nu responsive en vormgegeven zoals het orgineel. 
 ![Screenshot Detailpagina](images/Week7:8.Detailpagina.png)
+Ik had het gevoel dat mijn code niet semantisch correct was en heb daarom help gevraagd aan de student-assistent Lars. Hij vertelde mij dat mijn header navigatie inderdaad semantischer kon en heeft mij wat tips gegeven hoe ik dit kon doen. Ik heb dit nu aangepast: de vormgeving is niets veranderd, de code in mijn html wel. 
+Verder heb ik een tweede microinteractie toegevoegd. Deze verschijnt wanneer je op het vergrootglas icoontje klikt en opent een zoekvenster. Deze microinteractie bestaat uit add en remove van een class waar de andere microinteractie een toggle is. 
+![Screenshot 2e microinteractie](images/Week7:8.TweedeMicrointeractie.png)
+Ook heb ik een focus toegevoegd de hamburger- en zoekknopjes door deze in een 'a' element te zetten zodat de site toegankelijk is voor keyboard en de gebruiker weet dat deze onderdelen klikbaar zijn.  
+![Screenshot Toegankelijkheid](images/Toegankelijkheid.png)
 
 ### Agenda voor meeting
-Agende donderdag 17 sept:
+**Agende donderdag 17 sept:**
 Jan Willem van Kempen 
 Items (list) naast elkaar plaatsen, witte regels tussen afbeeldingen, tekst verdwijnen achter afbeeldingen
 
@@ -113,31 +117,31 @@ Jade Dionisio Pires
 Navigatie in header en footer
 
 
-Agenda donderdag 30 sept:
+**Agenda donderdag 30 sept:**
 Jade Dionisio Pires
-Column gap wordt ineens heel groot
-3 column grid claimt een plek voor een 4e column die er niet is
-alle fbeeldingen behalve de eerste zijn heel smal in het grid
-javascript werkt niet
+- Column gap wordt ineens heel groot
+- 3 column grid claimt een plek voor een 4e column die er niet is
+- alle fbeeldingen behalve de eerste zijn heel smal in het grid
+- javascript werkt niet
 
 Walter van Koesveld
-Image repeat
-Lijst met kolommen die niet goed te verdelen zijn
+- Image repeat
+- Lijst met kolommen die niet goed te verdelen zijn
 
 Jan Willem van Kempen
-Grid in hamburger menu werkt niet
-Hamburger menu is niet scrollbaar
-Transparant border uitgevouwen hamburgermenu
-Text wil niet centreren
+- Grid in hamburger menu werkt niet
+- Hamburger menu is niet scrollbaar
+- Transparant border uitgevouwen hamburgermenu
+- Text wil niet centreren
 
-Agenda donderdag 8 oktober:
+**Agenda donderdag 8 oktober:**
 Jade Dionisio Pires
-Witruimte om nav die niet weggaat
-Nav als overlay over content laten vallen (ook als main content fixed is)
-Footer neemt nav over van nav:first-of-type
-Background image toevoegen werkt niet / hoe maak je de maten groter
-Grid neemt altijd een 4e column in ook als deze niet bestaat
-Content 2e pagina niet aanspreekbaar zonder dat homepage mee veranderd
+- Witruimte om nav die niet weggaat
+- Nav als overlay over content laten vallen (ook als main content fixed is)
+- Footer neemt nav over van nav:first-of-type
+- Background image toevoegen werkt niet / hoe maak je de maten groter
+- Grid neemt altijd een 4e column in ook als deze niet bestaat
+- Content 2e pagina niet aanspreekbaar zonder dat homepage mee veranderd
 
 ### Verslag van meeting
 
@@ -148,9 +152,9 @@ Zie informatie bij voortgang per week
 
 **Je startniveau:** blauw / rood
 
-**Je focus:** -Responsive-
+**Je focus:** Responsive
 
-**Je opdracht:** -https://www.cocacola.nl/nl/home/-
+**Je opdracht:** https://www.cocacola.nl/nl/home/
 
 **Screenshot(s):**
 

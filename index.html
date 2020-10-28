@@ -12,53 +12,77 @@
 <body>
     <header>
         <nav>
+            <!-- Inhoud van hoofdnavigatie wat altijd zichtbaar is -->
             <ul>
                 <li>
-                    <figure class="HamburgerClass">
-                        <img src="images/HamburgerMenu.png" alt="Menu knopje">
-                        <figcaption>Menu</figcaption>
-                    </figure>
+                    <!-- a element voor toegankelijkheid -->
+                    <a href="#">
+                        <figure class="HamburgerClass">
+                            <img src="images/HamburgerMenu.png" alt="Menu knopje">
+                            <figcaption>Menu</figcaption>
+                        </figure>
+                    </a>
                 </li>
                 <li><a href='index.html'><img src="images/CocaColaLogo.png" alt='Het logo van Coca Cola'>
                     </a></li>
                 <li>
-                    <figure class='InloggenClass'>
+                    <!-- a element voor toegankelijkheid -->
+                    <a href="#">
+                        <img src="images/Vergrootglas.png" alt="Zoek knopje" class='Vergrootglas'>
+                    </a>
+                </li>
+            </ul>
+            <!-- Inloggen onderdeel wat alleen zichtbaar is op desktop -->
+            <ul>
+                <li>
+                    <figure>
                         <img src="images/user.png" alt="inlog icoon">
                         <figcaption>Inloggen</figcaption>
                     </figure>
-                    <img src="images/Vergrootglas.png" alt="Zoek knopje" class='Vergrootglas'>
                 </li>
             </ul>
-
-            <ul class='Gesloten'>
-                <li>Login</li>
-                <li><a href=""></a>Inloggen</li>
-                <li><a href=""></a>Mijn Account Bewerken</li>
-                <li>Volg coca-cola op social media</li>
-                <li><img src="images/Facebook.png" alt="Facebook logo"><img src='images/Twitter.png' alt='Logo Twitter'><img src="images/Instagram.png" alt="Logo Instagram"><img src='images/Youtube.png' alt="Logo Youtube"></li>
-                <li>Menu</li>
-                <li><a href="varianten.html">Ontdek onze varianten</a></li>
-                <li><a href=""></a>Original taste</li>
-                <li><a href=""></a>Zero sugar</li>
-                <li><a href=""></a>Light taste</li>
-                <li><a href=""></a>Energy</li>
-                <li><a href=""></a>Coke tv</li>
-                <li><a href=""></a>Blogs</li>
-                <li><a href=""></a>Meer brands van The Coca-Cola Company </li>
-            </ul>
-
-            <ul>
-                <li><img src="images/ZoekZwart.png" alt='vergrootglas icoon'></li>
-                <li>
-                    <form>
-                        <input type="search" placeholder="Search">
-                    </form>
-                </li>
-                <li>X</li>
-            </ul>
+            <!-- Inhoud van hamburger menu -->
+            <div>
+                <h3>Login</h3>
+                <ul>
+                    <li><a href=""></a>Inloggen</li>
+                    <li><a href=""></a>Mijn Account Bewerken</li>
+                </ul>
+                <h3>Volg coca-cola op social media</h3>
+                <ul>
+                    <li><img src="images/Facebook.png" alt="Facebook logo"></li>
+                    <li><img src='images/Twitter.png' alt='Logo Twitter'></li>
+                    <li><img src="images/Instagram.png" alt="Logo Instagram"></li>
+                    <li><img src='images/Youtube.png' alt="Logo Youtube"></li>
+                </ul>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="varianten.html">Ontdek onze varianten</a></li>
+                    <li><a href=""></a>Original taste</li>
+                    <li><a href=""></a>Zero sugar</li>
+                    <li><a href=""></a>Light taste</li>
+                    <li><a href=""></a>Energy</li>
+                    <li><a href=""></a>Coke tv</li>
+                    <li><a href=""></a>Blogs</li>
+                    <li><a href=""></a>Meer brands van The Coca-Cola Company </li>
+                </ul>
+            </div>
+            <!-- Inhoud zoekvenster -->
+            <div>
+                <ul>
+                    <li><img src="images/ZoekZwart.png" alt='vergrootglas icoon'></li>
+                    <li>
+                        <form>
+                            <input type="search" placeholder="Search">
+                        </form>
+                    </li>
+                    <li>X</li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+        <!-- Drie columns grid section -->
         <section>
             <h2>Ontdek onze smaken</h2>
             <article>
@@ -86,6 +110,7 @@
                 <p>Een verfrissende lichte smaak, zonder calorieen.</p>
             </article>
         </section>
+        <!-- Vier columns grid section -->
         <section>
             <h2>Ontdek meer van Coca-Cola</h2>
             <article>
@@ -121,6 +146,7 @@
                 <p>Duurzaamheid zit verankerd in de bedrijgsvoering van Coca-Cola. Lees meer over onze doelen en inspanningen.</p>
             </article>
         </section>
+        <!-- Footer -->
         <footer>
             <p>2020 The Coca-Cola Company. Coca-Cola, Coca-Cola zero, Coca-Cola light, Coca-Cola life, the Coca-Cola script logo, the design of the Coca-Cola contour bottle, and the Coca-Cola red disc icon are registered trademarks of The Coca-Cola Company.</p>
             <nav>
